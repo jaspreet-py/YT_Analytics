@@ -19,7 +19,7 @@ from functions import (
 
 # Fetching the secret API key from environment variables
 # api_key = os.environ.get("YT_apikey")
-api_key = "AIzaSyAwYxFLzjKRKUfqzq-4zGKApyHtd5c8KJU"
+api_key = os.environ.get("YT_apikey_secondary")
 
 
 # Main Header for the App
@@ -96,6 +96,9 @@ app = dash.Dash(
     suppress_callback_exceptions=True,
     prevent_initial_callbacks=True,
 )
+
+server = app.server
+
 app.title = "Search Box"
 
 # Forming the layout for the App
