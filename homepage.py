@@ -511,5 +511,8 @@ def update_final(clicks):
         return children, style
 
 
+print("Hello")
+
+
 if __name__ == "__main__":
     app.run_server(debug=True, port=8888)
